@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">SkinSight</string>
+
+
+    <string name="img_article">Image</string>
+    <string name="title_article">Title</string>
+    <string name="desc_article">Description</string>
+
+
+
+    <string name="title_home">Home</string>
+    <string name="title_scanx">Scan</string>
+    <string name="title_heal">Heal</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="language">language</string>
+
+
+    <string name="upload_image">uploadimg</string>
+    <string name="scan_img">scaning</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+
+
+    <string-array name="data_title">
+        <item>Three Skin Cancers You Should Know About</item>
+        <item>Signs of Basal Cell Skin Cancer</item>
+        <item>Signs of Squamous Cell Skin Cancer</item>
+        <item>Signs of Melanoma</item>
+        <item>How to Diagnose Skin Cancer Early</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>What are the three types of skin cancer you need to know about? Basal cell carcinoma, squamous cell carcinoma, and melanoma. Each year, more than 3.3 million people in the United States are treated for basal or squamous cell carcinoma, according to the Skin Cancer Foundation, and more than 73,000 Americans learn they have melanoma, the deadliest type of skin cancer. Checking your skin regularly for signs of skin cancer means you are more likely to catch it early and get more effective treatment.</item>
+        <item>Basal cell carcinoma (BCC) is the most common type of skin cancer, affecting about 2.8 million Americans each year. It may appear as a shiny bump or nodule, red patch, pinkish growth, open sore, or scar-like area. It almost always occurs on sun-exposed areas of the body, such as the head, neck, chest, arms, or legs. BCC is slow-growing and only rarely spreads to other areas of the body, making it highly treatable if caught early. But if left untreated, it can extend deep below the skin and cause local damage and scarring.</item>
+        <item>The second most common type of skin cancer, squamous cell carcinoma (SCC), may take the form of a firm bump, open sore, or scaly, red patch. It appears most commonly on the tops of the ears, lower lip, face, neck, and head, and on the hands, arms, and legs. Squamous cell skin cancers are more aggressive than basal cell cancers; besides causing local damage, they can metastasize, or spread, to other areas of the body. Approximately 700,000 Americans are diagnosed with squamous cell skin cancer each year, according to the Skin Cancer Foundation.</item>
+        <item>Melanoma accounts for less than 5 percent of all skin cancers but is responsible for the overwhelming majority of skin cancer deaths. One person dies of melanoma every 57 minutes. Melanoma most often develops on sun-exposed areas of the skin, but it can also start inside the eye, in the mouth, and on the palms of the hands and soles of the feet. It often starts as a new mole or a change to an existing mole. Melanoma often occurs at a younger age than other skin cancers; its the most common type of cancer in people ages 25 to 29.</item>
+        <item>The key to surviving skin cancer is early diagnosis. The five-year survival rate for melanoma, the most deadly form of skin cancer, is 98 percent if the cancer is discovered and treated before it penetrates below the outer layer of skin.Regular self-examination is the best way to find skin cancer early. Check every part of your body using a mirror and good lighting (get assistance from a partner). Be on the alert for any scaling, oozing, or bleeding of moles or other spots on the skin. And tell your doctor about any new growths or changes in freckles or moles.</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/artss1</item>
+        <item>@drawable/artss2</item>
+        <item>@drawable/artss3</item>
+        <item>@drawable/artss4</item>
+        <item>@drawable/artss5</item>
+    </integer-array>
+
+
+
+    <string name="title1">Causes of Skin Cancer</string>
+    <string name="desc1">Definition of Skin Cancer
+Skin cancer is a disease that occurs when skin cells grow abnormally. Skin cancer can affect various areas of the skin, but it is most commonly found on parts of the skin that are directly exposed to sunlight.
+
+Skin cancer is divided into three types: basal cell carcinoma, squamous cell carcinoma, and melanoma. Each type has distinct symptoms.
+
+Skin cancer can be prevented by protecting yourself from direct sunlight exposure. Pay attention to any changes in the color or texture of your skin, as it can help detect skin cancer at an early stage. The earlier skin cancer is detected, the higher the chances of successful treatment.</string>
+
+    <string name="title2">Preventing Skin Cancer</string>
+    <string name="desc2">Skin cancer can be prevented by following these recommendations to protect yourself:
+
+Reduce exposure to sunlight during the day.
+Use sunscreen.
+Wear clothing that provides protection against sunlight.</string>
+
+    <string name="title3">Treating Skin Cancer</string>
+    <string name="desc3">The choice of treatment for skin cancer depends on the size, type, depth, and location of the cancer. Here are some common treatment options:
+
+Cryosurgery: This procedure involves freezing and destroying actinic keratosis and small cancers on the skin using liquid nitrogen. The dead cells will peel off as they thaw.
+Excision surgery: This treatment is suitable for all types of skin cancer. It involves removing the cancer and a surrounding margin of healthy skin to ensure the complete removal of abnormal cells.
+Mohs surgery: This surgery is recommended for severe cases of skin cancer that are difficult to treat with other methods, such as basal cell carcinoma and squamous cell carcinoma. It involves removing abnormal cells while preserving as much healthy tissue as possible.
+Radiation therapy: This therapy uses high-energy radiation to kill cancer cells. It may be an option to eliminate any remaining cancer cells after surgery.
+Chemotherapy: This treatment involves applying lotions or creams to the skin to kill cancer cells and prevent their spread to other parts of the body.</string>
+
+</resources>

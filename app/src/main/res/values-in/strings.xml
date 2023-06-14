@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SkinSight</string>
+
+
+    <string name="img_article">Image</string>
+    <string name="title_article">Title</string>
+    <string name="desc_article">Description</string>
+
+
+
+    <string name="title_home">Home</string>
+    <string name="title_scanx">Scan</string>
+    <string name="title_heal">Heal</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="language">language</string>
+
+
+    <string name="upload_image">uploadimg</string>
+    <string name="scan_img">scaning</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+
+
+    <string-array name="data_title">
+        <item>Tiga Jenis Kanker Kulit yang Perlu Anda Ketahui</item>
+        <item>Tanda-tanda Kanker Kulit Sel Basal</item>
+        <item>Tanda-tanda Kanker Kulit Sel Skuamosa</item>
+        <item>Tanda-tanda Melanoma</item>
+        <item>Cara Mendiagnosis Kanker Kulit Secara Dini</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Apa saja tiga jenis kanker kulit yang perlu Anda ketahui? Karsinoma sel basal, karsinoma sel skuamosa, dan melanoma. Setiap tahun, lebih dari 3,3 juta orang di Amerika Serikat menjalani pengobatan untuk karsinoma sel basal atau skuamosa, menurut Skin Cancer Foundation, dan lebih dari 73.000 orang Amerika mengetahui bahwa mereka memiliki melanoma, jenis kanker kulit yang paling mematikan. Memeriksa kulit secara teratur untuk tanda-tanda kanker kulit membuat Anda lebih mungkin menemukannya secara dini dan mendapatkan pengobatan yang lebih efektif.</item>
+        <item>Karsinoma sel basal (BCC) adalah jenis kanker kulit yang paling umum, mempengaruhi sekitar 2,8 juta orang Amerika setiap tahun. Kanker ini dapat muncul sebagai benjolan atau nodul yang berkilau, bercak merah, pertumbuhan berwarna kemerahan, luka terbuka, atau area yang menyerupai bekas luka. Biasanya terjadi di area tubuh yang terkena sinar matahari, seperti kepala, leher, dada, lengan, atau kaki. Karsinoma sel basal tumbuh lambat dan jarang menyebar ke area tubuh lain, sehingga sangat bisa diobati jika terdeteksi secara dini. Namun, jika tidak diobati, kanker ini dapat memperluas ke dalam kulit dan menyebabkan kerusakan dan bekas luka di area sekitarnya.</item>
+        <item>Jenis kanker kulit kedua yang paling umum adalah karsinoma sel skuamosa (SCC), yang dapat berupa benjolan keras, luka terbuka, atau bercak merah bersisik. Biasanya muncul di bagian atas telinga, bibir bawah, wajah, leher, dan kepala, serta tangan, lengan, dan kaki. Kanker kulit sel skuamosa lebih agresif dibandingkan dengan kanker sel basal; selain menyebabkan kerusakan lokal, kanker ini dapat metastasis atau menyebar ke area tubuh lain. Sekitar 700.000 orang Amerika didiagnosis dengan kanker kulit sel skuamosa setiap tahunnya, menurut Skin Cancer Foundation.</item>
+        <item>Melanoma menyumbang kurang dari 5 persen dari seluruh kanker kulit, tetapi bertanggung jawab atas sebagian besar kematian akibat kanker kulit. Satu orang meninggal akibat melanoma setiap 57 menit. Melanoma paling sering berkembang di area kulit yang terpapar sinar matahari, tetapi juga dapat dimulai di dalam mata, mulut, telapak tangan, dan telapak kaki. Melanoma sering dimulai sebagai tahi lalat baru atau perubahan pada tahi lalat yang sudah ada. Melanoma biasanya muncul pada usia yang lebih muda dibandingkan dengan kanker kulit lainnya; ini adalah jenis kanker yang paling umum pada orang berusia 25 hingga 29 tahun.</item>
+        <item>Kunci untuk bertahan dari kanker kulit adalah diagnosis dini. Tingkat kelangsungan hidup selama lima tahun bagi melanoma, jenis kanker kulit yang paling mematikan, adalah 98 persen jika kanker tersebut ditemukan dan diobati sebelum menembus lapisan luar kulit. Pemeriksaan diri secara teratur adalah cara terbaik untuk menemukan kanker kulit secara dini. Periksa setiap bagian tubuh Anda menggunakan cermin dan pencahayaan yang cukup (minta bantuan dari pasangan). Tetap waspada terhadap adanya pengelupasan, keluarnya cairan, atau pendarahan pada tahi lalat atau bintik-bintik lain pada kulit. Sampaikan kepada dokter Anda tentang pertumbuhan baru atau perubahan pada tahi lalat atau bintik-bintik.</item>
+    </string-array>
+
+
+    <integer-array name="data_photo">
+        <item>@drawable/artss1</item>
+        <item>@drawable/artss2</item>
+        <item>@drawable/artss3</item>
+        <item>@drawable/artss4</item>
+        <item>@drawable/artss5</item>
+    </integer-array>
+
+    <string name="title1">Penyebab Kanker Kulit</string>
+    <string name="desc1">Pengertian kanker kulit
+    Kanker kulit adalah suatu penyakit yang terjadi karena sel kulit tumbuh secara tidak normal. Kanker kulit dapat menyerang berbagai area kulit, tetapi paling sering dialami bagian kulit yang terpapar sinar matahari langsung.
+
+    Kanker kulit terbagi atas tiga jenis yaitu karsinoma sel basal, karsinoma sel skuamosa, dan melanoma. Ketiganya dapat dibedakan dari gejala yang terlihat.
+
+    Kanker kulit dapat dihindari dengan menjaga diri dari paparan sinar matahari langsung. Perhatikan bila ada perubahan warna atau tekstur kulit yang mencurigakan. Hal ini  dapat membantu mendeteksi kanker kulit pada stadium awal. Semakin cepat kanker kulit terdeteksi, semakin cepat pula penanganan bisa diberikan agar angka kesembuhannya bisa lebih tinggi.</string>
+    <string name="title2">Cara mencegah kanker kulit</string>
+    <string name="desc2">Kanker kulit dapat dicegah dengan cara melindungi diri dan mengikuti saran pencegahan kanker kulit berikut ini:
+
+Kurangi intensitas terkena paparan sinar matahari pada siang hari.
+Gunakan tabir surya.
+Pilih pakaian yang dapat melindungi dari paparan sinar matahari.</string>
+    <string name="title3">Cara mengobati kanker kulit</string>
+    <string name="desc3">Pilihan pengobatan tergantung pada ukuran, jenis, kedalaman, dan lokasi kanker kulit. Berikut ini pengobatan yang dapat disarankan dokter:
+
+Cryosurgery. Prosedur ini dilakukan dengan menghancurkan keratosis aktinik dan beberapa kanker kecil pada kulit melalui pembekuan dengan nitrogen cair. Sel-sel yang mati akan mengelupas ketika mencair.
+Operasi eksisi. Jenis perawatan ini mungkin cocok untuk semua jenis kanker kulit. Tindakan tersebut dilakukan dengan cara mengangkat kanker dan kulit sehat di sekitarnya untuk membunuh sel-sel abnormal.
+Operasi Mohs. Operasi ini ditujukan untuk kasus kanker kulit yang lebih parah karena sulit diobati dengan metode lain. Misalnya pada kanker karsinoma sel basal dan skuamosa. Operasi ini berfungsi mengangkat sel-sel abnormal tanpa mengambil sel sehat di sekitarnya secara berlebihan.
+Terapi radiasi. Terapi ini dilakukan menggunakan sinar radiasi bertenaga tinggi untuk membunuh sel-sel kanker. Terapi radiasi dapat menjadi pilihan untuk membunuh sel-sel yang tersisa dari operasi.
+Pengobatan kemoterapi. Langkah ini dilakukan menggunakan losion atau krim untuk mematikan sel kanker di kulit pasien serta untuk mencegah penyebaran sel ke bagian tubuh yang lain.</string>
+
+</resources>

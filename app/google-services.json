@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "52008794624",
+    "project_id": "chat-firebase-832fb",
+    "storage_bucket": "chat-firebase-832fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52008794624:android:fbcced47b8e7142f0c76e5",
+        "android_client_info": {
+          "package_name": "com.capstone.skinsight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52008794624-mjo013rpgatnmu30r1bd0874runopvj6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capstone.skinsight",
+            "certificate_hash": "62dc8715e43755876f3e0eff4cbb543f6feba3d8"
+          }
+        },
+        {
+          "client_id": "52008794624-peq30osqd9oaffr6surrjgd6b7l76lck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa5CjIk8F7unhdW9vDuid--e_A7otmM_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52008794624-peq30osqd9oaffr6surrjgd6b7l76lck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
