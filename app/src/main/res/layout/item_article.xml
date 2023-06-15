@@ -20,24 +20,29 @@
             android:scaleType="centerCrop"
             android:contentDescription="@string/img_article" />
         <TextView
-            android:layout_marginHorizontal="5dp"
             android:id="@+id/tvTitle"
-            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="16dp"
             android:text="@string/title_article"
             android:textColor="@android:color/black"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_r"/>
+
+
         <TextView
-            android:layout_marginHorizontal="5dp"
             android:id="@+id/tvDesc"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="3"
-            android:textColor="@android:color/black"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/desc_article"/>
+            android:maxLines="3"
+            android:text="@string/desc_article"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins_el"/>
+
 
     </LinearLayout>
 
