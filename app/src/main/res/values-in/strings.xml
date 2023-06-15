@@ -73,4 +73,13 @@ Operasi Mohs. Operasi ini ditujukan untuk kasus kanker kulit yang lebih parah ka
 Terapi radiasi. Terapi ini dilakukan menggunakan sinar radiasi bertenaga tinggi untuk membunuh sel-sel kanker. Terapi radiasi dapat menjadi pilihan untuk membunuh sel-sel yang tersisa dari operasi.
 Pengobatan kemoterapi. Langkah ini dilakukan menggunakan losion atau krim untuk mematikan sel kanker di kulit pasien serta untuk mencegah penyebaran sel ke bagian tubuh yang lain.</string>
 
+    <string name="txtjargon">Kulit Sehat, Hidup Bahagia!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="txtdha">Belum punya akun? Daftar sekarang</string>
+    <string name="close">Tutup</string>
+    <string name="upload_response">Hasil</string>
+    <string name="txtuploadfail">upload gambar gagal</string>
+
 </resources>

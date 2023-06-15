@@ -11,19 +11,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.capstone.skinsight.CameraActivity
-import com.capstone.skinsight.R
+import com.capstone.skinsight.*
 import com.capstone.skinsight.databinding.FragmentScanxBinding
 import com.capstone.skinsight.retrofit.ApiConfig
 import com.capstone.skinsight.retrofit.UploadResponse
-import com.capstone.skinsight.rotateBitmap
-import com.capstone.skinsight.uriToFile
-import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
@@ -50,6 +47,7 @@ class ScanxFragment : Fragment() {
         ContextCompat.checkSelfPermission(requireContext(), it) == PackageManager.PERMISSION_GRANTED
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<String>,
@@ -60,7 +58,7 @@ class ScanxFragment : Fragment() {
             if (!allPermissionsGranted()) {
                 Toast.makeText(
                     requireContext(),
-                    "Permission denied",
+                    "Izin ditolak",
                     Toast.LENGTH_SHORT
                 ).show()
                 requireActivity().finish()
@@ -100,7 +98,7 @@ class ScanxFragment : Fragment() {
     private fun startGallery() {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"
-        val chooser = Intent.createChooser(intent, "Choose image")
+        val chooser = Intent.createChooser(intent, "Pilih gambar")
         launcherIntentGallery.launch(chooser)
     }
 
@@ -141,63 +139,75 @@ class ScanxFragment : Fragment() {
         }
     }
 
-    private fun uploadImage() {
-        if (getFile != null) {
-            val file = getFile as File
-            val requestImageFile = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
-            val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData(
-                "photo",
-                file.name,
-                requestImageFile
-            )
-            val service = ApiConfig.getApiService().uploadImage(imageMultipart)
-            service.enqueue(object : Callback<UploadResponse> {
-                override fun onResponse(
-                    call: Call<UploadResponse>,
-                    response: Response<UploadResponse>
-                ) {
-                    if (response.isSuccessful) {
-                        val uploadResponse = response.body()
-                        if (uploadResponse != null) {
-                            val message = uploadResponse.description
-                            Toast.makeText(
-                                requireContext(),
-                                message,
-                                Toast.LENGTH_SHORT
-                            ).show()
-                            println(response.body())
-                            requireActivity().finish()
-                        }
-                    } else {
-                        Toast.makeText(
-                            requireContext(),
-                            "Upload failed",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        println(response)
-                    }
-                }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 
-                override fun onFailure(call: Call<UploadResponse>, t: Throwable) {
+    private fun uploadImage() {
+        val file = reduceFileImage(getFile as File)
+        val reqImage = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
+        val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData(
+            "file",
+            file.name,
+            reqImage
+        )
+        showLoading(true)
+        val service = ApiConfig.getApiService().uploadImage(imageMultipart)
+        service.enqueue(object : Callback<UploadResponse> {
+            override fun onResponse(
+                call: Call<UploadResponse>,
+                response: Response<UploadResponse>
+            ) {
+                showLoading(false)
+                if (response.isSuccessful) {
+                    val responseBody = response.body()
+                    if (responseBody != null) {
+                        alertShow(true, responseBody)
+                    }
+                } else {
                     Toast.makeText(
                         requireContext(),
-                        "Connection failed",
+                        (getString(R.string.txtuploadfail)),
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-            })
-        } else {
-            Toast.makeText(
-                requireContext(),
-                "Insert picture",
-                Toast.LENGTH_SHORT
-            ).show()
+            }
+
+            override fun onFailure(call: Call<UploadResponse>, t: Throwable) {
+                showLoading(false)
+                Toast.makeText(
+                    requireContext(),
+                    (getString(R.string.txtuploadfail)),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        })
+    }
+
+
+    private fun alertShow(alertShow: Boolean, responseBody: UploadResponse?) {
+        if (alertShow) {
+            val dialogBuilder = AlertDialog.Builder(requireContext())
+            dialogBuilder.setTitle(getString(R.string.upload_response))
+            val message =
+                        "Name: ${responseBody?.name}\n" +
+                        "Severity: ${responseBody?.severity}\n" +
+                        "Description: ${responseBody?.description}\n" +
+                        "Confidence: ${responseBody?.confidence}\n" +
+                        "Action: ${responseBody?.action}"
+            dialogBuilder.setMessage(message)
+            dialogBuilder.setPositiveButton(getString(R.string.close)) { _, _ -> }
+            dialogBuilder.create().show()
         }
     }
 
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    private fun showLoading(isLoading: Boolean) {
+        if (isLoading) {
+            binding.progressBar.visibility = View.VISIBLE
+        } else {
+            binding.progressBar.visibility = View.GONE
+        }
     }
 }

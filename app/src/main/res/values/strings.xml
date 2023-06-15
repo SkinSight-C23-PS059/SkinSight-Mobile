@@ -74,4 +74,12 @@ Mohs surgery: This surgery is recommended for severe cases of skin cancer that a
 Radiation therapy: This therapy uses high-energy radiation to kill cancer cells. It may be an option to eliminate any remaining cancer cells after surgery.
 Chemotherapy: This treatment involves applying lotions or creams to the skin to kill cancer cells and prevent their spread to other parts of the body.</string>
 
+    <string name="txtjargon">Healthy Skin, Happy Life!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Sign in</string>
+    <string name="txtdha">Don\'t have an account yet? Register now</string>
+    <string name="close">Close</string>
+    <string name="upload_response">Result</string>
+    <string name="txtuploadfail">image upload failed</string>
 </resources>
